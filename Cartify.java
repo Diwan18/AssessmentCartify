@@ -20,7 +20,8 @@ public class Cartify {
 		WebElement JS = driver.findElement(By.xpath("//a/span[text()='Floor-Standing Cloth Rack With Wheels']"));
 		
 		driver.executeScript("arguments[0].click();", JS);
-		
+
+		Thread.sleep(5000);
 		driver.findElement(By.xpath("//button[@name='add']")).click();
 		
 		Thread.sleep(5000);
